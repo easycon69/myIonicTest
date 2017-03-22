@@ -1,0 +1,22 @@
+<ion-view view-title="TTS">
+  <ion-content class="padding">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-speakerphone placeholder-icon"></i>
+        <input type="text" placeholder="Let me speak..." ng-model="data.speechText">
+      </label>
+    </div>
+    <button class="button button-full button-positive" ng-click="speakText()">
+      Speak!
+    </button>
+
+<!--    <button class="button button-full button-positive"ng-click="record()">
+      Record
+    </button>
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{recognizedText}}
+      </div>
+    </div> -->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view view-title="Focus">
+  <ion-content>
+    <h1>SignalR</h1>
+    <div>
+      <button class="button button-assertive" ng-click="connectToServer()">Connect</button>
+    </div>
+    <div>
+      <label class="item item-input">
+        <span class="input-label">Message</span>
+        <input type="text" ng-model="data.message" />
+      </label>
+      <button class="button button-assertive" ng-click="sendMessage()">Send</button>
+    </div>
+    <div>
+      <ul>
+        <li ng-repeat="item in data.queue track by $index">
+          <span ng-bind="item"></span>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

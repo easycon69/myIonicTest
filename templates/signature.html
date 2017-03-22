@@ -1,0 +1,12 @@
+<ion-view view-title="Signature">
+  <ion-content class="padding" scroll="false">
+    <div class="card">
+        <canvas id="signature_canvas"></canvas>
+    </div>
+      <div class="button-bar">
+        <a href="" class="button icon-left ion-ios-close-outline button-assertive" ng-click="clearCanvas()">Clear canvas</a>
+        <a href="" class="button button-dark icon-left ion-ios-checkmark-outline" ng-click="saveCanvas()">Save canvas</a>
+      </div> 
+      <img ng-src="{{signature}}">
+  </ion-content>
+</ion-view>
